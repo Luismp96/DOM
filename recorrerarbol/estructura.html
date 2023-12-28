@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <title>DOM</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <div id="padre">
+            <div id="hermano1"></div>
+            <div id="yo">
+                <div id="hijo1"></div>
+                <div id="hijo2"></div>
+                <div id="hijo3"></div>
+            </div>
+            <div id="hermano2"></div>
+        </div>
+
+        <script>
+            var selector = document.getElementById("yo");
+            console.log(selector);
+            //PADRES
+            //var padre = selector.parentElement;
+            //console.log(padre);
+            //HIJOS
+            var hijos = selector.children;
+            console.log(hijos[0]);
+            //MANEJO ARRAY
+            //var hijo1 = selector.firstElementChild;
+            //console.log(hijo1);
+            //var ultimohijo = selector.lastElementChild;
+            //console.log(ultimohijo);
+            var hermanoMayor = selector.previousElementSibling;
+            console.log(hermanoMayor);
+            var hermanoMenor = selector.nextElementSibling;
+            console.log(hermanoMenor);
+        </script>
+    </body>
+
+</html>

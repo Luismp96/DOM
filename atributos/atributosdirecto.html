@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <title>DOM</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!--<div class="miclase" id="primero" name="minombre" style="color:red;"></div>-->
+        <div id="primero">1</div>
+        <script>
+            //----------------
+            //LEER ATRIBUTOS
+            //----------------
+            //var elemento = document.getElementById("primero");
+            //console.log("Mi ID es: " + elemento.id);
+            //console.log("Mi CLASE es: " + elemento.classList);
+            //console.log("Mi ESTILO DE COLOR es: " + elemento.style.color);
+            //console.log(elemento);
+            //--------------------
+            // ESTABLECER ATRIBUTOS
+            //--------------------
+            var elemento = document.getElementById("primero");
+            elemento.className = "miclase";
+            elemento.style.color = "red";
+           
+        </script>
+    </body>
+
+</html>

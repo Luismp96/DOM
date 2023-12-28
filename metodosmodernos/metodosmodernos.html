@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <title>DOM</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <section id="contenedor">
+            <div class="contenido" id="uno" name="primero" mipropiedad="hola">Uno</div>
+            <div class="contenido" id="dos" name="segundo" mipropiedad="adios">Dos</div>
+            <div class="contenido" id="tres" name="tercero" mipropiedad="quetal">Tres</div>
+        </section>
+        <script>
+
+            //-----------------------------------------
+            // METODOS NUEVOS DE SELECTORES (querySelector)
+            //-----------------------------------------
+            //SELECTORES POR ID
+            //------------------
+            //document.querySelector("#uno").style.color = "red";
+            //---------------------
+            //SELECTORES POR CLASE
+            //PARA ALMACENAR TODOS (QUERYSELECTORALL) - querySelector solo coge la primera.
+            //---------------------
+            //var elementos= document.querySelectorAll(".contenido")
+            //elementos[0].style.color = "red";
+            //-------------------------
+            //SELECTORES POR ETIQUETAS
+            //-------------------------
+            //var elementos = document.querySelectorAll("div");
+            //for (let i=0;i<elementos.length;i++){
+            //
+            //    switch(i){
+            //        case 0:
+            //            elementos[i].style.color = "red";
+            //            break;
+            //        case 1:
+            //            elementos[i].style.color = "yellow";
+            //            break;
+            //        case 2:
+            //            elementos[i].style.color = "orange";
+            //            break;
+            //        default:
+            //            elementos[i].style.color = "red";
+            //            break;
+            //    }
+            
+            //}
+            //------------------------
+            //SELECTORES POR NOMBRE
+            //------------------------
+            //var elementos = document.querySelectorAll("[name=primero]");
+            //for (let i=0;i<elementos.length;i++){
+            //    elementos[i].style.color = "red";
+            //}
+            //---------------------------
+            //PROPIEDADES PERSONALIZADAS
+            //---------------------------
+            var elementos = document.querySelectorAll("[mipropiedad=hola]");
+            for (let i=0;i<elementos.length;i++){
+                elementos[i].style.color = "red";
+            }
+        </script>
+    </body>
+
+</html>

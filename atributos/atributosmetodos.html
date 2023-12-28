@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <title>DOM</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!--<div class="miclase" id="primero" name="minombre" style="color:red;"></div>-->
+        <div id="contenedor">
+
+        </div>
+
+        <script>
+
+            //------------------
+            //LEER ATRIBUTOS
+            //------------------
+            //var elemento = document.getElementById("primero");
+            //console.log("Mi ID es " +  elemento.getAttribute("id"));
+            //console.log("Mi CLASE es " +  elemento.getAttribute("class"));
+            //console.log("Mi COLOR es " +  elemento.getAttribute("style"));
+            //console.log("Mi NOMBRE es " +  elemento.getAttribute("name"));
+            //-------------------
+            //ELIMINAR ATRIBUTOS
+            //-------------------
+            //var elemento = document.getElementById("primero");
+            //elemento.removeAttribute("name");
+            //-------------------
+            //CREAR ATRIBUTOS
+            //-------------------
+            var elemento = document.createElement("div");
+            elemento.setAttribute("id","identificador");
+            elemento.setAttribute("class","miclase");
+            elemento.innerHTML = "Hola"
+            elemento.setAttribute("contenteditable","true");
+            elemento.setAttribute("miatributo","true");
+            
+            document.getElementById("contenedor").append(elemento);
+
+        </script>
+    </body>
+
+</html>

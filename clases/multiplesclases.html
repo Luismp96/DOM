@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <title>DOM</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <div id="contenedor" class="primero segundo tercero cuarto">
+
+        </div>
+
+        <script>
+           
+            var selector = document.getElementById("contenedor");
+            //STRING DE CLASES
+            //console.log(selector.className);
+            //LISTA DE CLASES
+            console.log(selector.classList);
+            console.log(selector.classList[0]);
+            //AÑADIR CLASES
+            selector.classList.add("quinto");
+            console.log(selector.classList);
+            //BORRAR CLASES
+            selector.classList.remove("segundo");
+            console.log(selector.classList);
+            //BUSCADOR CLASES
+            console.log(selector.classList.contains("primero"));
+            console.log(selector.classList.contains("platano"));
+            //REEMPLAZAR CLASES
+            selector.classList.replace("tercero", "luis");
+            console.log(selector.classList);
+        </script>
+    </body>
+
+</html>
